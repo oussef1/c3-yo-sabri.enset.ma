@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière Studio — Agence de Design & Créativité</title>
+  <meta name="description" content="Lumière Studio est une agence de design haut de gamme spécialisée dans l'identité visuelle, le branding et la stratégie créative." />
+  <meta name="keywords" content="agence design, branding, identité visuelle, stratégie créative, Lumière Studio" />
+  <meta name="author" content="Lumière Studio" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lumierestudio.com/" />
+  <meta property="og:title" content="Lumière Studio — Agence de Design & Créativité" />
+  <meta property="og:description" content="Nous créons des identités visuelles inoubliables pour des marques ambitieuses." />
+  <meta property="og:image" content="https://lumierestudio.com/images/og-home.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lumière Studio" />
+  <meta name="twitter:description" content="Agence de design & créativité haut de gamme." />
+  <meta name="twitter:image" content="https://lumierestudio.com/images/og-home.jpg" />
+
+  <link rel="canonical" href="https://lumierestudio.com/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✦</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="main-nav">
+  <a href="index.html" class="nav__logo">Lumière<span>.</span></a>
+  <ul class="nav__links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="pages/about.html">À propos</a></li>
+    <li><a href="pages/services.html">Services</a></li>
+    <li><a href="pages/gallery.html">Galerie</a></li>
+    <li><a href="pages/contact.html" class="nav__cta">Contact</a></li>
+  </ul>
+  <button class="nav__burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav__mobile" id="mobile-nav">
+  <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+  <a href="index.html">Accueil</a>
+  <a href="pages/about.html">À propos</a>
+  <a href="pages/services.html">Services</a>
+  <a href="pages/gallery.html">Galerie</a>
+  <a href="pages/contact.html">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="accueil">
+  <div class="hero__video-wrap">
+    <video class="hero__video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+      <source src="images/hero-reel.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__content container">
+    <div class="hero__inner">
+      <span class="eyebrow animate-up">Agence de Design Haut de Gamme</span>
+      <h1 class="hero__title animate-up delay-1">
+        L'Art de la<br /><em>Lumière</em> Visuelle
+      </h1>
+      <p class="hero__sub animate-up delay-2">
+        Nous sculptons des identités de marque qui transcendent l'ordinaire —<br />
+        du concept à l'exécution, avec une précision absolue.
+      </p>
+      <div class="hero__actions animate-up delay-3">
+        <a href="pages/services.html" class="btn btn--primary">Découvrir nos services</a>
+        <a href="pages/gallery.html" class="btn btn--outline">Voir le portfolio</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll animate-up delay-4">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </div>
+
+  <!-- Responsive hero image fallback for contexts where video fails -->
+  <picture class="hero__picture">
+    <source
+      media="(max-width: 480px)"
+      srcset="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=480&q=80 480w"
+      sizes="100vw" />
+    <source
+      media="(max-width: 1024px)"
+      srcset="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1024&q=80 1024w"
+      sizes="100vw" />
+    <img
+      src="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1920&q=80"
+      srcset="
+        https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1280&q=80 1280w,
+        https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1920&q=80 1920w"
+      sizes="100vw"
+      alt="Lumière Studio — Hero"
+      loading="eager" />
+  </picture>
+</section>
+
+<!-- ===== STATS BAND ===== -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-band__grid">
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count="250" data-suffix="+">0</span>
+        <span class="stat__label">Projets réalisés</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count="12" data-suffix=" ans">0</span>
+        <span class="stat__label">D'expérience</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count="98" data-suffix="%">0</span>
+        <span class="stat__label">Clients satisfaits</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count="18">0</span>
+        <span class="stat__label">Prix remportés</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="services-preview" id="services">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Ce que nous faisons</span>
+      <h2>Services d'Exception</h2>
+      <p>De la stratégie au détail, nous orchestrons chaque dimension de votre présence visuelle.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="card service-card" data-reveal>
+        <div class="service-card__icon">✦</div>
+        <h3>Identité Visuelle</h3>
+        <p>Création de logos, chartes graphiques et systèmes visuels cohérents qui reflètent l'essence de votre marque.</p>
+        <a href="pages/services.html#identite" class="service-card__link">En savoir plus →</a>
+      </article>
+
+      <article class="card service-card service-card--featured" data-reveal>
+        <div class="service-card__icon">◈</div>
+        <h3>Stratégie de Marque</h3>
+        <p>Analyse approfondie, positionnement et architecture de marque pour construire un avantage concurrentiel durable.</p>
+        <a href="pages/services.html#strategie" class="service-card__link">En savoir plus →</a>
+      </article>
+
+      <article class="card service-card" data-reveal>
+        <div class="service-card__icon">⬡</div>
+        <h3>Design Éditorial</h3>
+        <p>Livres, magazines, rapports annuels — des publications qui racontent votre histoire avec élégance.</p>
+        <a href="pages/services.html#editorial" class="service-card__link">En savoir plus →</a>
+      </article>
+
+      <article class="card service-card" data-reveal>
+        <div class="service-card__icon">◎</div>
+        <h3>Expérience Digitale</h3>
+        <p>Sites web, interfaces et motion design pour une présence numérique à la hauteur de votre ambition.</p>
+        <a href="pages/services.html#digital" class="service-card__link">En savoir plus →</a>
+      </article>
+    </div>
+
+    <div class="services-cta" data-reveal>
+      <a href="pages/services.html" class="btn btn--ghost">Tous nos services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT TEASER ===== -->
+<section class="about-teaser">
+  <div class="container">
+    <div class="about-teaser__grid">
+      <div class="about-teaser__visual" data-reveal>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80 600w"
+            sizes="100vw" />
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80 600w,
+              https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80 900w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Notre studio de design"
+            loading="lazy" />
+        </picture>
+        <div class="about-teaser__badge">
+          <span>Fondée en</span>
+          <strong>2012</strong>
+        </div>
+      </div>
+
+      <div class="about-teaser__text" data-reveal>
+        <span class="eyebrow">Notre histoire</span>
+        <h2>Façonnés par la<br /><em>Passion du Détail</em></h2>
+        <p class="lead">Lumière Studio est née d'une conviction simple : le design exceptionnel transforme les entreprises. Depuis 12 ans, nous accompagnons des marques ambitieuses vers l'excellence visuelle.</p>
+        <p style="color: var(--grey-mid); font-size: 0.9rem; margin-top: 1.2rem;">Notre équipe de 15 créatifs passionnés fusionne expertise technique et sensibilité artistique pour des résultats qui marquent les esprits.</p>
+        <a href="pages/about.html" class="btn btn--primary" style="margin-top: 2rem;">Rencontrer l'équipe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Notre approche</span>
+      <h2>Un Processus Éprouvé</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step" data-reveal>
+        <div class="process-step__num">01</div>
+        <h4>Découverte</h4>
+        <p>Immersion totale dans votre univers, votre marché et vos ambitions.</p>
+      </div>
+      <div class="process-connector" data-reveal></div>
+      <div class="process-step" data-reveal>
+        <div class="process-step__num">02</div>
+        <h4>Stratégie</h4>
+        <p>Définition du positionnement et de la direction créative.</p>
+      </div>
+      <div class="process-connector" data-reveal></div>
+      <div class="process-step" data-reveal>
+        <div class="process-step__num">03</div>
+        <h4>Création</h4>
+        <p>Design, itérations et raffinement jusqu'à la perfection.</p>
+      </div>
+      <div class="process-connector" data-reveal></div>
+      <div class="process-step" data-reveal>
+        <div class="process-step__num">04</div>
+        <h4>Livraison</h4>
+        <p>Déploiement complet et accompagnement post-lancement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="temoignages">
+  <div class="container container--narrow">
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Témoignages</span>
+      <h2>Ce que disent nos clients</h2>
+    </div>
+
+    <div class="testimonials__slider">
+      <div class="testimonial-slide">
+        <div class="testimonial__quote">"</div>
+        <blockquote>
+          Lumière Studio a complètement métamorphosé notre identité. En six semaines, notre perception de marque a bondi de 40 points. Un investissement qui se mesure en résultats concrets.
+        </blockquote>
+        <footer class="testimonial__author">
+          <picture>
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&q=80"
+              srcset="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&q=80 1x,
+                      https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&h=160&fit=crop&q=80 2x"
+              alt="Marc Delacroix"
+              loading="lazy" />
+          </picture>
+          <div>
+            <strong>Marc Delacroix</strong>
+            <span>Directeur Général, Maison Aurore</span>
+          </div>
+        </footer>
+      </div>
+
+      <div class="testimonial-slide">
+        <div class="testimonial__quote">"</div>
+        <blockquote>
+          Une équipe qui comprend réellement les enjeux business. Leur approche stratégique avant tout créative nous a permis de nous démarquer dans un marché saturé.
+        </blockquote>
+        <footer class="testimonial__author">
+          <picture>
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&q=80"
+              srcset="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&q=80 1x,
+                      https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&h=160&fit=crop&q=80 2x"
+              alt="Sophie Morel"
+              loading="lazy" />
+          </picture>
+          <div>
+            <strong>Sophie Morel</strong>
+            <span>CMO, Éclat Cosmétiques</span>
+          </div>
+        </footer>
+      </div>
+
+      <div class="testimonial-slide">
+        <div class="testimonial__quote">"</div>
+        <blockquote>
+          Le projet le plus abouti de notre histoire. Lumière Studio a su capturer l'âme de notre entreprise et la traduire en un langage visuel d'une cohérence remarquable.
+        </blockquote>
+        <footer class="testimonial__author">
+          <picture>
+            <img
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&q=80"
+              srcset="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&q=80 1x,
+                      https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=160&h=160&fit=crop&q=80 2x"
+              alt="Thomas Baudoin"
+              loading="lazy" />
+          </picture>
+          <div>
+            <strong>Thomas Baudoin</strong>
+            <span>Fondateur, Atelier Nord</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="testimonials__controls">
+      <button class="slider-prev" aria-label="Précédent">←</button>
+      <div class="slider-dots">
+        <button class="slider-dot" aria-label="Slide 1"></button>
+        <button class="slider-dot" aria-label="Slide 2"></button>
+        <button class="slider-dot" aria-label="Slide 3"></button>
+      </div>
+      <button class="slider-next" aria-label="Suivant">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band">
+  <div class="container" data-reveal>
+    <span class="eyebrow">Prêt à commencer ?</span>
+    <h2>Votre prochaine grande<br />identité commence ici</h2>
+    <a href="pages/contact.html" class="btn btn--primary">Démarrer un projet</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">Lumière<span>.</span></a>
+        <p>Agence de design haut de gamme spécialisée en identité visuelle, branding et stratégie créative depuis 2012.</p>
+        <div style="display:flex; gap:1rem; margin-top:1.2rem;">
+          <a href="#" aria-label="Instagram" style="color:var(--grey-mid);font-size:1.1rem;">◈</a>
+          <a href="#" aria-label="LinkedIn" style="color:var(--grey-mid);font-size:1.1rem;">⬡</a>
+          <a href="#" aria-label="Behance" style="color:var(--grey-mid);font-size:1.1rem;">◎</a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Plan du site">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="pages/about.html">À propos</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/gallery.html">Galerie</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pages/services.html#identite">Identité Visuelle</a></li>
+          <li><a href="pages/services.html#strategie">Stratégie de Marque</a></li>
+          <li><a href="pages/services.html#editorial">Design Éditorial</a></li>
+          <li><a href="pages/services.html#digital">Expérience Digitale</a></li>
+          <li><a href="pages/services.html#motion">Motion Design</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@lumierestudio.com">hello@lumierestudio.com</a></li>
+          <li><a href="tel:+33140001234">+33 1 40 00 12 34</a></li>
+          <li style="color:var(--grey-mid);font-size:0.85rem;">12 rue de la Paix<br/>75001 Paris, France</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2024 Lumière Studio. Tous droits réservés.</p>
+      <nav class="footer__legal" aria-label="Mentions légales">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGU</a>
+        <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

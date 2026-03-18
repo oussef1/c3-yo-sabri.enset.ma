@@ -1,0 +1,88 @@
+/* ============================================
+   SERVICES PAGE — Specific Styles
+   ============================================ */
+
+.services-detail { background: var(--noir); padding: var(--spacing-xl) 0; }
+
+.service-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-bottom: var(--spacing-lg);
+}
+
+.service-block__header {
+  display: contents;
+}
+
+.service-block__header > div {
+  /* text side */
+}
+
+.service-block__header picture {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.service-block__header picture img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: var(--transition);
+}
+
+.service-block:hover picture img { filter: brightness(0.95); }
+
+.service-block__header h2 { color: var(--white); margin-top: 0.5rem; }
+
+.service-block__intro {
+  font-size: 0.95rem;
+  color: var(--grey-mid);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.service-block__faq { grid-column: 1; }
+
+/* Alternate layout — even blocks reversed */
+.service-block:nth-child(4n+1) .service-block__header picture {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.service-block:nth-child(4n+1) .service-block__header > div {
+  grid-column: 2;
+}
+
+.service-block:nth-child(4n+1) .service-block__intro { grid-column: 2; }
+.service-block:nth-child(4n+1) .service-block__faq { grid-column: 2; }
+
+.services-divider { margin: var(--spacing-md) 0; }
+
+/* ===== PRICING TABLE ===== */
+.pricing {
+  background: var(--charcoal);
+  padding: var(--spacing-xl) 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .service-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-block__header picture,
+  .service-block:nth-child(4n+1) .service-block__header picture {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .service-block:nth-child(4n+1) .service-block__header > div,
+  .service-block:nth-child(4n+1) .service-block__intro,
+  .service-block:nth-child(4n+1) .service-block__faq {
+    grid-column: 1;
+  }
+}

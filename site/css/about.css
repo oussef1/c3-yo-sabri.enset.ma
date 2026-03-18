@@ -1,0 +1,240 @@
+/* ============================================
+   ABOUT PAGE — Specific Styles
+   ============================================ */
+
+/* ===== MANIFESTO ===== */
+.manifesto {
+  background: var(--charcoal);
+  padding: var(--spacing-xl) 0;
+}
+
+.manifesto__text {
+  margin-bottom: var(--spacing-lg);
+}
+
+.manifesto__text h2 {
+  color: var(--white);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.manifesto__text h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.manifesto__text p {
+  color: var(--grey-mid);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  max-width: 680px;
+  margin-bottom: 1rem;
+}
+
+.manifesto__values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  border-top: 1px solid rgba(201,168,76,0.12);
+  padding-top: var(--spacing-md);
+}
+
+.value-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.value-item__icon {
+  font-size: 1.5rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.value-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.value-item p {
+  font-size: 0.85rem;
+  color: var(--grey-mid);
+  line-height: 1.7;
+}
+
+/* ===== FOUNDERS ===== */
+.founders { background: var(--noir); padding: var(--spacing-xl) 0; }
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: var(--spacing-lg);
+}
+
+.founder-card__figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: end;
+  margin: 0;
+}
+
+.founder-card__figure--reverse {
+  direction: rtl;
+}
+
+.founder-card__figure--reverse figcaption {
+  direction: ltr;
+}
+
+.founder-card__figure picture img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  filter: brightness(0.9) grayscale(15%);
+  transition: var(--transition);
+}
+
+.founder-card:hover img {
+  filter: brightness(1) grayscale(0%);
+}
+
+.founder-card__figure figcaption {
+  padding-bottom: 1rem;
+}
+
+.founder-card__figure figcaption strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.founder-card__figure figcaption em {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.founder-card__figure figcaption p {
+  font-size: 0.85rem;
+  color: var(--grey-mid);
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.founder-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+/* ===== TEAM GRID ===== */
+.team { background: var(--charcoal); padding: var(--spacing-xl) 0; }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.team-member figure { margin: 0; }
+
+.team-member img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: grayscale(40%) brightness(0.85);
+  transition: var(--transition);
+}
+
+.team-member:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+.team-member figcaption {
+  padding: 0.8rem 0 0;
+}
+
+.team-member figcaption strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.team-member figcaption em {
+  font-size: 0.72rem;
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+/* ===== AWARDS ===== */
+.awards { background: var(--noir); padding: var(--spacing-xl) 0; }
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  border-top: 1px solid rgba(201,168,76,0.12);
+  padding-top: 3rem;
+}
+
+.award-item {
+  padding: 2rem;
+  border: 1px solid rgba(201,168,76,0.1);
+  transition: var(--transition);
+}
+
+.award-item:hover {
+  border-color: rgba(201,168,76,0.3);
+  background: rgba(201,168,76,0.03);
+}
+
+.award-item__year {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.award-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.award-item p {
+  font-size: 0.8rem;
+  color: var(--grey-mid);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
+  .awards-grid { grid-template-columns: repeat(2, 1fr); }
+  .manifesto__values { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .founders-grid { grid-template-columns: 1fr; }
+  .founder-card__figure { grid-template-columns: 1fr; }
+  .founder-card__figure--reverse { direction: ltr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .awards-grid { grid-template-columns: 1fr; }
+}

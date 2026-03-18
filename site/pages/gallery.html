@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie — Lumière Studio</title>
+  <meta name="description" content="Portfolio Lumière Studio : identité visuelle, branding, design éditorial et expériences digitales pour des marques d'exception." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lumierestudio.com/pages/gallery.html" />
+  <meta property="og:title" content="Portfolio & Galerie — Lumière Studio" />
+  <meta property="og:description" content="Découvrez nos réalisations en identité visuelle, branding et design éditorial." />
+  <meta property="og:image" content="https://lumierestudio.com/images/og-gallery.jpg" />
+
+  <link rel="canonical" href="https://lumierestudio.com/pages/gallery.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✦</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/gallery.css" />
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a href="../index.html" class="nav__logo">Lumière<span>.</span></a>
+  <ul class="nav__links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html" class="active">Galerie</a></li>
+    <li><a href="contact.html" class="nav__cta">Contact</a></li>
+  </ul>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__mobile">
+  <button class="nav__mobile-close">✕</button>
+  <a href="../index.html">Accueil</a>
+  <a href="about.html">À propos</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Galerie</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow animate-up">Notre portfolio</span>
+    <h1 class="animate-up delay-1">Galerie de Réalisations</h1>
+    <p class="lead animate-up delay-2" style="margin:1rem auto 0; text-align:center;">
+      250+ projets qui ont transformé des entreprises en marques inoubliables.
+    </p>
+  </div>
+</section>
+
+<!-- FILTER TABS -->
+<div class="gallery-filters" data-reveal>
+  <div class="container">
+    <div class="gallery-filters__tabs">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="identite">Identité</button>
+      <button class="filter-btn" data-filter="editorial">Éditorial</button>
+      <button class="filter-btn" data-filter="digital">Digital</button>
+      <button class="filter-btn" data-filter="packaging">Packaging</button>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY GRID -->
+<section class="gallery-section">
+  <div class="container container--wide">
+    <div class="gallery-grid">
+
+      <!-- Item 1 — Featured (large) -->
+      <div class="gallery-item gallery-item--large" data-category="identite" data-reveal>
+        <picture>
+          <source
+            media="(max-width: 480px)"
+            srcset="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=480&q=80 480w" />
+          <source
+            media="(max-width: 1024px)"
+            srcset="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80 800w" />
+          <img
+            src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80 600w,
+              https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80 1200w"
+            sizes="(max-width: 768px) 100vw, 65vw"
+            alt="Maison Aurore — Refonte identité complète"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Identité</span>
+          <h3>Maison Aurore</h3>
+          <p>Refonte identité complète — Luxe & Joaillerie</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item" data-category="digital" data-reveal>
+        <picture>
+          <source media="(max-width: 480px)"
+            srcset="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&q=80 400w" />
+          <img
+            src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Éclat Cosmétiques — Site e-commerce"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Digital</span>
+          <h3>Éclat Cosmétiques</h3>
+          <p>E-commerce & identité digitale</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item" data-category="editorial" data-reveal>
+        <picture>
+          <img
+            src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Rapport annuel Groupe Hélios"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Éditorial</span>
+          <h3>Groupe Hélios</h3>
+          <p>Rapport annuel & publications</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item" data-category="packaging" data-reveal>
+        <picture>
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Atelier Nord — Packaging horlogerie"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Packaging</span>
+          <h3>Atelier Nord</h3>
+          <p>Packaging horlogerie haut de gamme</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="gallery-item" data-category="identite" data-reveal>
+        <picture>
+          <img
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Bureau Vide — Identité architecte"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Identité</span>
+          <h3>Bureau Vide</h3>
+          <p>Identité cabinet d'architecture</p>
+        </div>
+      </div>
+
+      <!-- Item 6 — Featured tall -->
+      <div class="gallery-item gallery-item--tall" data-category="digital" data-reveal>
+        <picture>
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85"
+            srcset="
+              https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Fragrance Lab — Brand film"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Digital</span>
+          <h3>Fragrance Lab</h3>
+          <p>Brand film & motion design</p>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="gallery-item" data-category="editorial" data-reveal>
+        <picture>
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Éditions Soleil — Catalogue art"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Éditorial</span>
+          <h3>Éditions Soleil</h3>
+          <p>Catalogue d'art & plaquette</p>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="gallery-item" data-category="packaging" data-reveal>
+        <picture>
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80 600w"
+            sizes="(max-width: 768px) 100vw, 30vw"
+            alt="Botanica — Packaging cosmétique"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Packaging</span>
+          <h3>Botanica</h3>
+          <p>Packaging cosmétique naturel</p>
+        </div>
+      </div>
+
+      <!-- Item 9 — Featured large -->
+      <div class="gallery-item gallery-item--wide" data-category="identite" data-reveal>
+        <picture>
+          <source
+            media="(max-width: 480px)"
+            srcset="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=480&q=80 480w" />
+          <img
+            src="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1000&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1493612276216-ee3925520721?w=600&q=80 600w,
+              https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1000&q=80 1000w"
+            sizes="(max-width: 768px) 100vw, 65vw"
+            alt="Volta — Identité startup fintech"
+            loading="lazy" />
+        </picture>
+        <div class="gallery-item__overlay">
+          <span class="tag">Identité</span>
+          <h3>Volta</h3>
+          <p>Identité complète startup Fintech — Série A</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.95); align-items:center; justify-content:center; padding:2rem;">
+  <button id="lb-close" style="position:absolute; top:1.5rem; right:2rem; background:none; border:none; color:var(--cream); font-size:2rem; cursor:pointer; z-index:2;">✕</button>
+  <figure style="max-width:90vw; max-height:90vh; text-align:center;">
+    <img id="lb-img" src="" alt="" style="max-width:100%; max-height:80vh; object-fit:contain;" />
+    <figcaption id="lb-caption" style="margin-top:1rem; font-size:0.85rem; color:var(--grey-mid); font-family:var(--font-display); font-style:italic;"></figcaption>
+  </figure>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">Lumière<span>.</span></a>
+        <p>Agence de design haut de gamme spécialisée en identité visuelle, branding et stratégie créative depuis 2012.</p>
+      </div>
+      <nav class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#identite">Identité Visuelle</a></li>
+          <li><a href="services.html#strategie">Stratégie de Marque</a></li>
+          <li><a href="services.html#editorial">Design Éditorial</a></li>
+          <li><a href="services.html#digital">Expérience Digitale</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@lumierestudio.com">hello@lumierestudio.com</a></li>
+          <li><a href="tel:+33140001234">+33 1 40 00 12 34</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Lumière Studio. Tous droits réservés.</p>
+      <nav class="footer__legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGU</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+// Gallery filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    galleryItems.forEach(item => {
+      const show = filter === 'all' || item.dataset.category === filter;
+      item.style.opacity = show ? '1' : '0.15';
+      item.style.pointerEvents = show ? 'auto' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
