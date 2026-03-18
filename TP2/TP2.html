@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2 - Formulaire d'Inscription</title>
+    <link rel="stylesheet" href="TP2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Créer un compte</h1>
+        <p class="subtitle">Veuillez remplir les informations ci-dessous</p>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required autocomplete="family-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required autocomplete="given-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="nom@exemple.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel" required 
+                           pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" 
+                           title="Format français attendu (ex: 0612345678)">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date de naissance (18 ans min)</label>
+                    <input type="date" id="dob" name="dob" required max="2008-03-18">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sécurité</legend>
+                <div class="form-group">
+                    <label for="pwd">Mot de passe</label>
+                    <input type="password" id="pwd" name="pwd" required 
+                           pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"
+                           title="8 caractères min, 1 majuscule, 1 chiffre">
+                </div>
+                <div class="form-group">
+                    <label for="pwd_confirm">Confirmation</label>
+                    <input type="password" id="pwd_confirm" name="pwd_confirm" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Détails du profil</legend>
+                <div class="form-group">
+                    <label for="pays">Pays</label>
+                    <input list="pays-list" id="pays" name="pays" required placeholder="Sélectionnez...">
+                    <datalist id="pays-list">
+                        <option value="France"><option value="Belgique"><option value="Suisse">
+                        <option value="Canada"><option value="Maroc"><option value="Sénégal">
+                    </datalist>
+                </div>
+
+                <div class="form-group radio-check">
+                    <label>Genre :</label>
+                    <input type="radio" id="h" name="genre" value="H" required> <label for="h" class="inline">H</label>
+                    <input type="radio" id="f" name="genre" value="F"> <label for="f" class="inline">F</label>
+                </div>
+
+                <div class="form-group radio-check">
+                    <label>Centres d'intérêt :</label>
+                    <input type="checkbox" id="c1" name="interest" value="sport"> <label for="c1" class="inline">Sport</label>
+                    <input type="checkbox" id="c2" name="interest" value="tech"> <label for="c2" class="inline">Tech</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Biographie</label>
+                    <textarea id="bio" name="bio" maxlength="200" rows="3" placeholder="Parlez-nous de vous..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Photo de profil</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+            </fieldset>
+
+            <div class="cgu-group">
+                <input type="checkbox" id="cgu" name="cgu" required>
+                <label for="cgu">J'accepte les CGU</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Valider l'inscription</button>
+        </form>
+    </div>
+
+</body>
+</html>
